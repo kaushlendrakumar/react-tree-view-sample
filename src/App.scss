@@ -1,0 +1,33 @@
+.app-container{
+  .header{
+    background-color: #003d4c;
+    color: #ffffff;
+    padding: 20px;
+    font-size: 18px;
+  }
+  .each-family-container{
+    padding: 10px 20px;
+    .heading-1{
+      font-weight: 600;
+      padding-bottom: 6px;
+    }
+    .title-name{
+      color: rgba(102,102,102,0.8);
+    }
+    .collapsable-box{
+      display: inline-block;
+      height: 15px;
+      width: 18px;
+      &.collapsable-icon{
+        cursor: pointer;
+      }
+    }
+    
+  }
+  ul{
+    margin: 0px;
+    li{
+      list-style-type: none;
+    }
+  }
+}

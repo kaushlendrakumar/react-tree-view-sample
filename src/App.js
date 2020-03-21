@@ -11,7 +11,7 @@ function App() {
 
   // start API call
   React.useEffect(() => {
-    fetch('http://localhost:3000/App.json')
+    fetch(`${window.location.origin}/App.json`)
       .then(results => results.json())
       .then(data => {
         console.log("data:", data);

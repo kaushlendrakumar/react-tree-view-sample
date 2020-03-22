@@ -6,5 +6,4 @@ For run this app:
 
 <!-- this is react app for tree view. -->
 
-Tree View - Screen
 ![](public/app-home.png)

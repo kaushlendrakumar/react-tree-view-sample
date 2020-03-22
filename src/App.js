@@ -14,7 +14,6 @@ function App() {
     fetch(`${window.location.origin}/App.json`)
       .then(results => results.json())
       .then(data => {
-        console.log("data:", data);
         // set initalize value after API Call
         setItemList({ ...itemList, list: data.response });
       });
@@ -23,14 +22,13 @@ function App() {
 
   // start collapseTree event
   const collapseTree = (data) => {
-    console.log("collapseTree...", data);
     data.isChildShow = !data.isChildShow;
     setItemList({ ...itemList, data });
   }
   // end collapseTree event
 
   // start newHtml
-  function newHtml(data) {
+  const newHtml = (data) => {
     if (data && data.length > 0) {
       return data.map((item, index) => {
         return (
